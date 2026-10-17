@@ -88,7 +88,7 @@ public class Doors : MonoBehaviour, IInteractable
     /// </summary>
     private void RoomsSnap()
     {
-        RoomAmbient roomAmbient = FindObjectOfType<RoomAmbient>();
+        RoomAmbient roomAmbient = FindFirstObjectByType<RoomAmbient>();
 
         // Logika włączania i wyłączania snapshotu.
         if (roomAmbient.ambientActivated && doorsOpened)
